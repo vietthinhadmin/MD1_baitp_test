@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm so nguyen lon nhat</title>
+</head>
+<body>
+<!--INPUT A,B,D NGUYEN-->
+<script>
+    let a, b, c;
+    a = +prompt("Nhap So nguyen a")
+    b = +prompt("Nhap So nguyen b")
+    c = +prompt("Nhap So nguyen c")
+    let max = a
+    if (a < b) {
+        max = b
+        if (b < c) {
+            max = c
+        }
+    } else {
+        if (a < c) {
+            max = c
+        }
+    }
+    alert("Gia tri lon nhat trong 3 so la : " + max)
+</script>
+</body>
+</html>

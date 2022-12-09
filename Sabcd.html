@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ple</title>
+</head>
+<body>
+<label for="a">
+    Canh A
+</label>
+<input type="number" id="a">
+<label for="b">
+    Canh B
+</label>
+<input type="number" id="b">
+<button type="button" onclick="Sabc()">SabcLA</button>
+<h3 id="Sabc"></h3>
+<script>
+    alert('Loading 11%')
+
+    function Sabc() {
+        let a = +document.getElementById('a').value
+        let b = +document.getElementById('b').value
+        let result = 1 / 2 * (a * b)
+        document.getElementById("Sabc").innerText = "Thu ban muon tinh la :" + result
+    }
+</script>
+</body>
+</html>
